@@ -1,0 +1,207 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Cantilever chair",
+      "image": "src/assets/images/latestproduct/chair1.png",
+      "price": 26.00,
+      "originalPrice": 42.00,
+      "colors": ["#FF8A9D", "#7BBDFF", "#9FCC5D"],
+      "rating": 4,
+      "isFeatured": true,
+      "isTrending": false,
+      "badge": null
+    },
+    {
+      "id": 2,
+      "name": "Wooden dining chair",
+      "image": "src/assets/images/latestproduct/chair2.png",
+      "price": 55.00,
+      "originalPrice": 80.00,
+      "colors": ["#FFB800", "#8B5A3C", "#000000"],
+      "rating": 5,
+      "isFeatured": true,
+      "isTrending": false,
+      "badge": null
+    },
+    {
+      "id": 3,
+      "name": "Luxury office chair",
+      "image": "src/assets/images/latestproduct/chair3.png",
+      "price": 35.00,
+      "originalPrice": 58.00,
+      "colors": ["#7BBDFF", "#FF8A9D", "#9FCC5D"],
+      "rating": 4,
+      "isFeatured": true,
+      "isTrending": false,
+      "badge": null
+    },
+    {
+      "id": 4,
+      "name": "Modern dining chair",
+      "image": "src/assets/images/latestproduct/chair4.png",
+      "price": 48.00,
+      "originalPrice": 72.00,
+      "colors": ["#FFB800", "#8B5A3C"],
+      "rating": 5,
+      "isFeatured": true,
+      "isTrending": false,
+      "badge": null
+    },
+    {
+      "id": 5,
+      "name": "Red armchair",
+      "image": "src/assets/images/latestproduct/chair5.png",
+      "price": 65.00,
+      "originalPrice": 95.00,
+      "colors": ["#C80000", "#000000"],
+      "rating": 4,
+      "isFeatured": false,
+      "isTrending": true,
+      "badge": null
+    },
+    {
+      "id": 6,
+      "name": "Yellow wooden chair",
+      "image": "src/assets/images/latestproduct/chair6.png",
+      "price": 42.00,
+      "originalPrice": 65.00,
+      "colors": ["#FFB800"],
+      "rating": 5,
+      "isFeatured": false,
+      "isTrending": true,
+      "badge": "New"
+    },
+    {
+      "id": 7,
+      "name": "White modern chair",
+      "image": "src/assets/images/latestproduct/chair7.png",
+      "price": 38.00,
+      "originalPrice": 58.00,
+      "colors": ["#FFFFFF", "#000000"],
+      "rating": 4,
+      "isFeatured": false,
+      "isTrending": true,
+      "badge": null
+    },
+    {
+      "id": 8,
+      "name": "Black modern chair",
+      "image": "src/assets/images/latestproduct/chair8.png",
+      "price": 55.00,
+      "originalPrice": 82.00,
+      "colors": ["#000000", "#FFFFFF"],
+      "rating": 5,
+      "isFeatured": false,
+      "isTrending": true,
+      "badge": null
+    },
+    {
+      "id": 9,
+      "name": "Light grey dining chair",
+      "image": "src/assets/images/latestproduct/chair9.png",
+      "price": 32.00,
+      "originalPrice": 50.00,
+      "colors": ["#E0E0E0", "#000000"],
+      "rating": 4,
+      "isFeatured": false,
+      "isTrending": false,
+      "badge": null
+    },
+    {
+      "id": 10,
+      "name": "Red stool",
+      "image": "src/assets/images/latestproduct/chair10.png",
+      "price": 28.00,
+      "originalPrice": 45.00,
+      "colors": ["#C80000", "#000000"],
+      "rating": 4,
+      "isFeatured": false,
+      "isTrending": false,
+      "badge": null
+    },
+    {
+      "id": 11,
+      "name": "Grey modern chair",
+      "image": "src/assets/images/latestproduct/chair11.png",
+      "price": 45.00,
+      "originalPrice": 68.00,
+      "colors": ["#808080", "#000000"],
+      "rating": 5,
+      "isFeatured": false,
+      "isTrending": false,
+      "badge": null
+    },
+    {
+      "id": 12,
+      "name": "Dark red modern chair",
+      "image": "src/assets/images/latestproduct/chair12.png",
+      "price": 52.00,
+      "originalPrice": 78.00,
+      "colors": ["#8B0000"],
+      "rating": 4,
+      "isFeatured": false,
+      "isTrending": false,
+      "badge": null
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Mini LC3 Chair",
+      "image": "src/assets/images/Categories/chair1.png",
+      "itemCount": "2.5k",
+      "badge": "New"
+    },
+    {
+      "id": 2,
+      "name": "Classic Chair",
+      "image": "src/assets/images/Categories/chair2.png", 
+      "itemCount": "1.8k",
+      "badge": null
+    },
+    {
+      "id": 3,
+      "name": "Modern Chair",
+      "image": "src/assets/images/Categories/chair3.png",
+      "itemCount": "3.2k",
+      "badge": null
+    },
+    {
+      "id": 4,
+      "name": "Luxury Chair",
+      "image": "src/assets/images/Categories/chair4.png",
+      "itemCount": "2.1k",
+      "badge": null
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": 1,
+      "title": "Top essential Trends in 2025",
+      "author": "Admin",
+      "date": "21 August, 2020",
+      "image": "src/assets/images/BlogImages/JIUjvqe2ZHg.png",
+      "description": "More than 2000 essential furniture items.",
+      "url": "#"
+    },
+    {
+      "id": 2,
+      "title": "Top essential Trends in 2025",
+      "author": "Admin",
+      "date": "20 August, 2020",
+      "image": "src/assets/images/BlogImages/2dcYhvbHV-M.png",
+      "description": "Modern furniture collection trends 2021.",
+      "url": "#"
+    },
+    {
+      "id": 3,
+      "title": "Top essential Trends in 2025",
+      "author": "Admin",
+      "date": "19 August, 2020",
+      "image": "src/assets/images/BlogImages/2dcYhvbHV-M (1).png",
+      "description": "Essential furniture for your home.",
+      "url": "#"
+    }
+  ]
+}

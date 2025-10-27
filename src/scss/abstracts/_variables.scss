@@ -1,0 +1,40 @@
+// Color Palette
+$primary-color: #FB2E86;
+$secondary-color: #151875;
+$text-dark: #000000;
+$text-light: #8A8FB9;
+$text-gray: #8A8FB9;
+$white: #FFFFFF;
+$light-gray: #F1F1F5;
+$border-gray: #E7E6EF;
+
+// Gradient
+$gradient-primary: linear-gradient(90deg, rgba(251, 46, 134, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+$gradient-secondary: linear-gradient(90deg, rgba(21, 24, 117, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+
+// Typography
+$font-primary: 'Josefin Sans', sans-serif;
+$font-secondary: 'Lato', sans-serif;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-xxl: 4rem;
+
+// Container
+$container-max-width: 1200px;
+$container-padding: 1rem;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Shadows
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
