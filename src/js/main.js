@@ -595,4 +595,46 @@ function initHeroSlider() {
 document.addEventListener('DOMContentLoaded', () => {
   init();
   initHeroSlider();
+  // Pages dropdown toggle
+  // const pagesDropdown = document.querySelector('.pages-dropdown');
+  // if (pagesDropdown) {
+  //   const menu = pagesDropdown.querySelector('.dropdown-menu');
+  //   if (menu) {
+  //     const toggleMenu = (show) => {
+  //       if (show) {
+  //         menu.removeAttribute('hidden');
+  //         // Use requestAnimationFrame to ensure the element is rendered before adding class
+  //         requestAnimationFrame(() => {
+  //           menu.classList.add('show');
+  //         });
+  //       } else {
+  //         menu.classList.remove('show');
+  //         // Wait for transition to complete before hiding
+  //         setTimeout(() => {
+  //           if (menu && !menu.classList.contains('show')) {
+  //             menu.setAttribute('hidden', '');
+  //           }
+  //         }, 300);
+  //       }
+  //     };
+
+  //     pagesDropdown.addEventListener('click', (e) => {
+  //       e.stopPropagation();
+  //       const isShown = menu.classList.contains('show');
+  //       toggleMenu(!isShown);
+  //     });
+
+  //     // Close dropdown when clicking outside
+  //     document.addEventListener('click', (e) => {
+  //       if (!pagesDropdown.contains(e.target)) {
+  //         toggleMenu(false);
+  //       }
+  //     });
+
+  //     // Prevent closing when clicking inside dropdown
+  //     menu.addEventListener('click', (e) => {
+  //       e.stopPropagation();
+  //     });
+  //   }
+  // }
 });
