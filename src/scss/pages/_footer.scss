@@ -1,0 +1,203 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// Footer
+.main-footer {
+  background: #EEEFFB;
+  color: #8A8FB9;
+  padding: $spacing-xxl 0 0;
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: $spacing-xl;
+    margin-bottom: $spacing-xxl;
+
+    @include respond-to(md) {
+      grid-template-columns: 1.5fr repeat(3, 1fr);
+    }
+  }
+
+  .footer-column {
+    &:first-child {
+      max-width: 300px;
+    }
+  }
+
+  .footer-logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $text-dark;
+    margin-bottom: $spacing-md;
+    font-family: $font-primary;
+  }
+
+  .footer-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: $text-dark;
+    margin-bottom: $spacing-md;
+    font-family: $font-primary;
+  }
+
+  .footer-links {
+    list-style: none;
+
+    li {
+      margin-bottom: $spacing-xs;
+
+      a {
+        font-size: 0.9375rem;
+        color: #8A8FB9;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .footer-newsletter {
+    display: flex;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-lg;
+
+    .email-input {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      border: 1px solid #E7E6EF;
+      border-radius: 3px;
+      background: $white;
+      color: #8A8FB9;
+      font-size: 0.9375rem;
+
+      &::placeholder {
+        color: #8A8FB9;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: $primary-color;
+      }
+    }
+
+    .btn-primary.btn-small {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.875rem;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+  }
+
+  .footer-contact {
+    .contact-heading {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: $text-gray;
+      margin-bottom: $spacing-xs;
+    }
+
+    .contact-address {
+      font-size: 0.9375rem;
+      color: #8A8FB9;
+      line-height: 1.6;
+    }
+  }
+
+  .footer-bottom {
+    background: #E7E4F8;
+    border-top: 1px solid rgba(138, 143, 185, 0.2);
+    padding: $spacing-sm;
+
+    .container {
+      @include flex-between;
+      align-items: center;
+
+      @media (max-width: 576px) {
+        flex-direction: column;
+        gap: $spacing-md;
+        text-align: center;
+      }
+    }
+
+    .copyright-text {
+      color: #8A8FB9;
+      font-size: 0.9375rem;
+      margin: 0;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: $spacing-md;
+      align-items: center;
+
+      .social-icon {
+        display: inline-flex;
+        width: 30px;
+        height: 30px;
+        position: relative;
+      }
+    }
+  }
+}
+
+// Trending Product Card (New Design)
+.trending-product-card {
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  .trending-product-image-wrapper {
+    background: #F8FAFC;
+    border: 10px solid white;
+    height: 280px;
+    @include flex-center;
+    
+    .trending-product-image {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .trending-product-info {
+    padding: 1.5rem;
+    text-align: center;
+    
+    .trending-product-name {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #1C1C1C;
+      margin: 0 0 1rem 0;
+    }
+
+    .trending-price-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      
+      .trending-current-price {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #1C1C1C;
+      }
+
+      .trending-original-price {
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: #8A8FB9;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+

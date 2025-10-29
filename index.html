@@ -35,18 +35,18 @@
           <select class="select-currency">
             <option>USD <span>▼</span></option>
           </select>
-          <a href="#" class="login-link">
+          <a href="/login.html" class="login-link">
+            Login
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
             </svg>
-            Login
           </a>
           <a href="#" class="wishlist-link">
+            Wishlist
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            Wishlist
           </a>
           <a href="#" class="cart-link">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,9 +78,7 @@
         <div class="search-bar">
           <input type="text" placeholder="Search" class="search-input">
           <button class="search-btn" aria-label="Search">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.7422 10.3439C12.5329 9.2673 13 7.9382 13 6.5C13 2.91015 10.0899 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 10.0899 2.91015 13 6.5 13C7.93858 13 9.26801 12.5327 10.3448 11.7415L14.2929 15.6914C14.6834 16.0819 15.3166 16.0819 15.7071 15.6914C16.0977 15.3009 16.0977 14.6677 15.7071 14.2772L11.7422 10.3439Z" fill="white"/>
-            </svg>
+            <img src="src/assets/images/newsletter/searchIcon.png" alt="Search" >
           </button>
         </div>
       </div>
@@ -90,39 +88,111 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">
-        <div class="hero-content">
-          <div class="hero-left">
-            <div class="hero-image-left">
-              <img src="src/assets/images/herosection/lamp.png" alt="Pendant Lamp" id="heroLamp">
+        <div class="hero-slider">
+          <div class="hero-slides">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+              <div class="hero-content">
+                <div class="hero-left">
+                  <div class="hero-image-left">
+                    <img src="src/assets/images/herosection/lamp.png" alt="Pendant Lamp">
+                  </div>
+                  <div class="hero-text">
+                    <p class="hero-subtitle">Best Furniture For Your Castle....</p>
+                    <h1 class="hero-title">New Furniture Collection Trends in 2020</h1>
+                    <p class="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+                    <button class="btn btn-primary">Shop Now</button>
+                  </div>
+                </div>
+                <div class="hero-right">
+                  <div class="hero-chair-container">
+                    <div class="hero-circle"></div>
+                    <div class="hero-circle-2"></div>
+                    <img src="src/assets/images/herosection/pikarmchair.png" alt="Pink Armchair">
+                    <div class="floating-badge">
+                      <span class="badge-number">50%</span>
+                      <span class="badge-text">off</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="hero-text">
-              <p class="hero-subtitle">Best Furniture For Your Castle....</p>
-              <h1 class="hero-title">New Furniture Collection Trends in 2020</h1>
-              <p class="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
-              <button class="btn btn-primary">Shop Now</button>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+              <div class="hero-content">
+                <div class="hero-left">
+                  <div class="hero-image-left">
+                    <img src="src/assets/images/herosection/lamp.png" alt="Pendant Lamp">
+                  </div>
+                  <div class="hero-text">
+                    <p class="hero-subtitle">Best Furniture For Your Castle....</p>
+                    <h1 class="hero-title">Modern Minimalist Trends in 2020</h1>
+                    <p class="hero-description">Discover elegant and comfortable seating solutions. Perfect blend of style and functionality for your home.</p>
+                    <button class="btn btn-primary">Shop Now</button>
+                  </div>
+                </div>
+                <div class="hero-right">
+                  <div class="hero-chair-container">
+                    <div class="hero-circle"></div>
+                    <div class="hero-circle-2"></div>
+                    <img src="src/assets/images/latestproduct/chair1.png" alt="Modern Chair">
+                    <div class="floating-badge">
+                      <span class="badge-number">30%</span>
+                      <span class="badge-text">off</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="hero-right">
-            <div class="hero-chair-container">
-              <div class="hero-circle"></div>
-              <div class="hero-circle-2"></div>
-              <img src="src/assets/images/herosection/pikarmchair.png" alt="Pink Armchair" id="heroChair">
-              <div class="floating-badge">
-                <span class="badge-number">50%</span>
-                <span class="badge-text">off</span>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+              <div class="hero-content">
+                <div class="hero-left">
+                  <div class="hero-image-left">
+                    <img src="src/assets/images/herosection/lamp.png" alt="Pendant Lamp">
+                  </div>
+                  <div class="hero-text">
+                    <p class="hero-subtitle">Best Furniture For Your Castle....</p>
+                    <h1 class="hero-title">Luxury Sofa Collection Trends in 2020</h1>
+                    <p class="hero-description">Experience ultimate comfort with our premium sofa collections. Designed for modern living spaces.</p>
+                    <button class="btn btn-primary">Shop Now</button>
+                  </div>
+                </div>
+                <div class="hero-right">
+                  <div class="hero-chair-container">
+                    <div class="hero-circle"></div>
+                    <div class="hero-circle-2"></div>
+                    <img src="src/assets/images/latestproduct/Home-Stylish-Club-Sofa-Chair-Pleated-Sofa-Armchair-with-Golden-Legs 1.png" alt="Luxury Sofa">
+                    <div class="floating-badge">
+                      <span class="badge-number">25%</span>
+                      <span class="badge-text">off</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="hero-navigation">
+
+          <!-- Navigation Dots -->
           <div class="hero-nav-dots">
-            <span class="nav-dot active"></span>
+            <span class="nav-dot active" data-slide="0"></span>
+            <span class="nav-dot" data-slide="1"></span>
+            <span class="nav-dot" data-slide="2"></span>
           </div>
-          <!-- <div class="hero-nav-arrows">
-            <span class="nav-arrow"></span>
-            <span class="nav-arrow"></span>
-            <span class="nav-arrow active"></span>
-          </div> -->
+
+          <!-- Navigation Arrows -->
+          <!-- <button class="hero-nav-arrow hero-nav-prev" aria-label="Previous slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="hero-nav-arrow hero-nav-next" aria-label="Next slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button> -->
         </div>
       </div>
     </section>
@@ -148,7 +218,7 @@
       <div class="container">
         <h2 class="section-title">Latest Products</h2>
         <div class="product-tabs">
-          <button class="product-tab active">New Arrival</button>
+          <button class="product-tab active" >New Arrival</button>
           <button class="product-tab">Best Seller</button>
           <button class="product-tab">Featured</button>
           <button class="product-tab">Special Offer</button>
@@ -159,40 +229,31 @@
       </div>
     </section>
 
-    <!-- Trending Products -->
-    <section class="products-section">
-      <div class="container">
-        <h2 class="section-title">Trending Products</h2>
-        <div class="products-grid" id="trendingProducts">
-          <!-- Products will be dynamically loaded -->
-        </div>
-      </div>
-    </section>
 
     <!-- What Buyers Offer -->
     <section class="offers-section">
       <div class="container">
-        <h2 class="section-title">What Buyers Offer</h2>
+        <h2 class="section-title">What Shopex Offer!</h2>
         <div class="offers-grid">
           <div class="offer-card">
             <div class="offer-icon">🚚</div>
-            <h3>Free Shipping</h3>
-            <p>For all orders over $140</p>
+            <h3>24/7 Support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
           </div>
           <div class="offer-card">
             <div class="offer-icon">🎁</div>
-            <h3>Gift Card</h3>
-            <p>Special offers for loyalty</p>
+            <h3>24/7 Support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
           </div>
           <div class="offer-card">
             <div class="offer-icon">🏆</div>
-            <h3>Award Winning</h3>
-            <p>Best furniture shop</p>
+            <h3>24/7 Support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
           </div>
           <div class="offer-card">
             <div class="offer-icon">⏰</div>
             <h3>24/7 Support</h3>
-            <p>Always ready to help</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
           </div>
         </div>
       </div>
@@ -203,8 +264,8 @@
       <div class="container">
         <div class="features-content">
           <div class="features-image">
-            <img src="assets/images/features-chair.png" alt="Featured Chair">
-            <div class="features-circle"></div>
+            <div class="background-image"><img src="src/assets/images/backgronudImages/Ellipse 63.png" alt="Circle"></div>
+            <img src="src/assets/images/latestproduct/Home-Stylish-Club-Sofa-Chair-Pleated-Sofa-Armchair-with-Golden-Legs 1.png" alt="Featured Chair">
           </div>
           <div class="features-text">
             <h2>Unique Features Of latest & Trending Products</h2>
@@ -230,15 +291,78 @@
       </div>
     </section>
 
+    <!-- Promotional Banners and Product List -->
+    <section class="promotional-section">
+      <div class="container">
+        <div class="promotional-grid">
+          <!-- Left Promotional Banner -->
+          <div class="promotional-banner promotional-banner-pink">
+            <div class="promotional-content">
+              <h3 class="promotional-title">23% off in all products</h3>
+              <a href="#" class="promotional-link">Shop Now</a>
+            </div>
+            <div class="promotional-image">
+              <img src="src/assets/images/latestproduct/Clock.png" alt="Product">
+            </div>
+          </div>
+
+          <!-- Middle Promotional Banner -->
+          <div class="promotional-banner promotional-banner-lavender">
+            <div class="promotional-content">
+              <h3 class="promotional-title">23% off in all products</h3>
+              <a href="#" class="promotional-link">View Collection</a>
+            </div>
+            <div class="promotional-image">
+              <img src="src/assets/images/latestproduct/chair6.png" alt="Product">
+            </div>
+          </div>
+
+          <!-- Right Product List -->
+          <div class="product-list">
+            <!-- Product Item 1 -->
+            <div class="product-list-item">
+              <div class="product-list-image">
+                <img src="src/assets/images/latestproduct/chair1.png" alt="Executive Seat chair">
+              </div>
+              <div class="product-list-content">
+                <h4 class="product-list-name">Executive Seat chair</h4>
+                <p class="product-list-price">$32.00</p>
+              </div>
+            </div>
+
+            <!-- Product Item 2 -->
+            <div class="product-list-item">
+              <div class="product-list-image">
+                <img src="src/assets/images/latestproduct/chair2.png" alt="Executive Seat chair">
+              </div>
+              <div class="product-list-content">
+                <h4 class="product-list-name">Executive Seat chair</h4>
+                <p class="product-list-price">$32.00</p>
+              </div>
+            </div>
+
+            <!-- Product Item 3 -->
+            <div class="product-list-item">
+              <div class="product-list-image">
+                <img src="src/assets/images/latestproduct/chair3.png" alt="Executive Seat chair">
+              </div>
+              <div class="product-list-content">
+                <h4 class="product-list-name">Executive Seat chair</h4>
+                <p class="product-list-price">$32.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Discount Item -->
     <section class="discount-section">
       <div class="container">
         <h2 class="section-title">Discount Item</h2>
         <div class="discount-nav">
           <a href="#" class="discount-nav-link active">Wood Chair</a>
-          <span class="discount-nav-separator">•</span>
           <a href="#" class="discount-nav-link">Plastic Chair</a>
-          <span class="discount-nav-separator">•</span>
           <a href="#" class="discount-nav-link">Sofa Collection</a>
         </div>
         <div class="discount-content">
@@ -247,16 +371,16 @@
             <p class="discount-product-name">Eams Sofa Compact</p>
             <p class="discount-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse nec, bibendum condimentum.</p>
             <ul class="discount-features-list">
-              <li>Material expose like metals</li>
-              <li>Simple neutral colours.</li>
-              <li>Clear lines and geomatric figures</li>                                                      
-              <li>Material expose like metals</li>
+              <li class="discount-feature-1">Material expose like metals</li>
+              <li class="discount-feature-2">Simple neutral colours.</li>
+              <li class="discount-feature-3">Clear lines and geomatric figures</li>                                                      
+              <li class="discount-feature-4">Material expose like metals</li>
             </ul>
             <button class="btn btn-primary discount-btn">Shop Now</button>
           </div>
           <div class="discount-image">
             <div class="discount-image-container"></div>
-            <img src="src/assets/images/discountimages/discount-Image.png" alt="Discount Chair">
+            <img src="src/assets/images/discountimages/discount-Image.png" alt="Discount Chair" class="discount-chair-image">
           </div>
         </div>
       </div>
@@ -269,6 +393,11 @@
         <div class="categories-grid" id="topCategories">
           <!-- Categories will be dynamically loaded -->
         </div>
+        <div class="category-pagination">
+          <span class="pagination-dot active"></span>
+          <span class="pagination-dot"></span>
+          <span class="pagination-dot"></span>
+        </div>
       </div>
     </section>
 
@@ -280,10 +409,9 @@
       <div class="container">
         <div class="newsletter-content">
           <div class="newsletter-text">
-            <h2>Get Latest Updates by Subscribing to Our Newsletter</h2>
+            <h2>Get Leatest Update By Subscribe<br>Our Newslater</h2>
             <div class="newsletter-form">
-              <input type="email" placeholder="Enter Your Email" class="email-input">
-              <button class="btn btn-primary">Shop Now</button>
+              <button class="btn-newsletter">Shop Now</button>
             </div>
           </div>
         </div>

@@ -1,0 +1,285 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// Hero Section
+.hero {
+  background:#F2F0FF;
+  padding: $spacing-xxl 0 $spacing-xl;
+  overflow: hidden;
+  position: relative;
+
+  .container {
+    position: relative;
+    overflow: visible;
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-xl;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .hero-left {
+    position: relative;
+
+    .hero-image-left {
+      position: absolute;
+      top: -220px;
+      left: -300px;
+      z-index: 5;
+
+      img {
+        width: 80%;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+      }
+    }
+
+    .hero-subtitle {
+      font-size: 1.125rem;
+      color: $primary-color;
+      font-weight: 600;
+      margin-bottom: $spacing-sm;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #000000;
+      margin-bottom: $spacing-md;
+      line-height: 1.2;
+      font-family: $font-primary;
+
+      @include respond-to(md) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .hero-description {
+      color: $text-gray;
+      margin-bottom: $spacing-lg;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+
+  .hero-right {
+    position: relative;
+
+    .hero-chair-container {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .hero-circle {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background:#ECD2FA59;
+        border-radius: 50%;
+        z-index: 1;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .hero-circle-2 {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 500px;
+        background:#ECD2FA59;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      img {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+      }
+
+      .floating-badge {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        z-index: 3;
+        background-image: url('/src/assets/images/backgronudImages/floatingBadge.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        width: 140px;
+        height: 140px;
+        padding: 0;
+        line-height: 1.2;
+
+        .badge-number {
+          font-size: 2.5rem;
+          line-height: 1;
+          font-weight: 700;
+          color: $white;
+        }
+
+        .badge-text {
+          font-size: 2rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  // Hero Slider Container
+  .hero-slider {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+
+    .hero-slides {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 600px;
+      overflow: visible;
+    }
+
+    .hero-slide {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+        position: absolute;
+      }
+
+      .hero-content {
+        animation: slideIn 0.5s ease-in-out;
+      }
+    }
+
+    // Navigation Dots
+    .hero-nav-dots {
+      display: flex;
+      justify-content: center;
+      gap: $spacing-xs;
+      margin-top: $spacing-xl;
+      position: relative;
+      z-index: 20;
+
+      .nav-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 25%;
+        border: 1px solid $primary-color;
+        background: rgb(255, 255, 255);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        transform: rotate(45deg);
+
+        &:hover {
+          background: $primary-color;
+        }
+
+        &.active {
+          background: $primary-color;
+        }
+      }
+    }
+
+    // Navigation Arrows
+    .hero-nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background: $white;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $light-gray;
+
+        svg {
+          stroke: $white;
+        }
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        stroke: $primary-color;
+        transition: stroke 0.3s ease;
+      }
+
+      &.hero-nav-prev {
+        left: -350px;
+      }
+
+      &.hero-nav-next {
+        right: -350px;
+      }
+    }
+  }
+}
+
+// Animation for slider
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+

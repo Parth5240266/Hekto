@@ -19,6 +19,17 @@
     padding: 0.5rem 1.5rem;
     font-size: 0.875rem;
   }
+  
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    padding: 0.625rem 1.5rem;
+    font-size: 0.875rem;
+    
+    &.btn-small {
+      padding: 0.5rem 1.25rem;
+      font-size: 0.8125rem;
+    }
+  }
 }
 
 // Icon buttons

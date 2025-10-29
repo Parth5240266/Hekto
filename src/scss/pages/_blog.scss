@@ -1,0 +1,217 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// Blog Section
+.blog-section {
+  padding: $spacing-xxl 0;
+  background: $white;
+}
+
+.blog-card {
+  background: $white;
+  border: 1px solid $border-gray;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  // @include hover-lift;
+
+  .blog-image-container {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
+
+  .blog-content {
+    padding: $spacing-lg;
+
+    .blog-meta {
+      display: flex;
+      gap: $spacing-md;
+      color: $text-gray;
+      font-size: 0.875rem;
+      margin-bottom: $spacing-sm;
+
+      .blog-meta-item {
+        @include flex-center;
+        gap: 8px;
+        color: $secondary-color;
+      }
+    }
+
+    .blog-title {
+      color: $secondary-color;
+      margin-bottom: $spacing-sm;
+      transition: color 0.3s ease;
+    }
+
+    &:hover .blog-title {
+      color: $primary-color;
+    }
+
+    .blog-description {
+      color: $text-gray;
+      margin-bottom: $spacing-md;
+    }
+
+    .author-icon {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+    }
+
+    .date-icon {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+    }
+
+    .blog-link {
+      color: $secondary-color;
+      font-weight: 600;
+      transition: color 0.3s ease;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:hover .blog-link {
+      color: $primary-color;
+    }
+  }
+}
+
+// Categories Section
+.categories-section {
+  padding: $spacing-xxl 0;
+  background: $white;
+
+  .categories-grid {
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .categories-grid.slide-out {
+    animation: slideOut 0.3s ease forwards;
+  }
+
+  .categories-grid.slide-in {
+    animation: slideIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  .category-pagination {
+    display: flex;
+    justify-content: center;
+    gap: $spacing-sm;
+    margin-top: $spacing-xl;
+
+    .pagination-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(251, 46, 134, 0.2);
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &.active {
+        background: #FB2E86;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.category-card {
+  position: relative;
+  text-align: center;
+  
+  .base-container {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    z-index: 1;
+    background: #9877E7;
+    @include flex-center;
+    margin-bottom: $spacing-md;
+  }
+
+  .category-image-container {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    z-index: 2;
+    overflow: hidden;
+    background: #F5F6F8;
+    margin-bottom: $spacing-md;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+    &:hover {
+      transform: translate(6px, -6px);
+    }
+
+    &:hover .category-view-all {
+      height: 30px;
+      width: 100px;
+      background:#08D15F;
+      color: $white;
+      border-radius: 3px;
+      position: absolute;
+      bottom: 15px;
+      right: 75px;
+      z-index: 3;
+      transition: transform 0.3s ease;
+      // @include hover-lift;
+    }
+
+    .category-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: $spacing-lg;
+      transition: transform 0.3s ease;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .category-info {
+    position: relative;
+    z-index: 11;
+
+    .category-name {
+      color: $secondary-color;
+      margin-bottom: $spacing-xs;
+      transition: color 0.3s ease;
+      font-weight: 600;
+    }
+
+    .category-count {
+      color: $text-gray;
+      transition: color 0.3s ease;
+      font-size: 0.875rem;
+    }
+  }
+
+  // &:hover .category-info {
+  //   .category-name {
+  //     color: #9877E7;
+  //   }
+
+  //   .category-count {
+  //     color: #52D5BA;
+  //   }
+  // }
+}

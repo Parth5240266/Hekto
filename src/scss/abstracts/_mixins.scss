@@ -38,6 +38,22 @@
   }
 }
 
+// Max-width responsive mixins (for larger screens)
+@mixin respond-below($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: 575px) { @content; }
+  }
+  @if $breakpoint == md {
+    @media (max-width: 767px) { @content; }
+  }
+  @if $breakpoint == lg {
+    @media (max-width: 991px) { @content; }
+  }
+  @if $breakpoint == xl {
+    @media (max-width: 1199px) { @content; }
+  }
+}
+
 // Button base
 @mixin button-base {
   padding: 0.75rem 2rem;

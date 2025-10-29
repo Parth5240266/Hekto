@@ -2,33 +2,67 @@
 
 // Typography
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
+  
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+  
+  @media (min-width: 992px) {
+    font-size: 3rem;
+  }
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
+  
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 992px) {
+    font-size: 2.5rem;
+  }
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
+  
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 600;
+  
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
 }
 
 // Section titles
 .section-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: $secondary-color;
-  margin-bottom: $spacing-xl;
+  margin-bottom: $spacing-md;
   position: relative;
+  
+  @media (min-width: 768px) {
+    font-size: 1.75rem;
+    margin-bottom: $spacing-lg;
+  }
+  
+  @media (min-width: 992px) {
+    font-size: 2rem;
+    margin-bottom: $spacing-xl;
+  }
 }
 
 // Container
@@ -36,4 +70,8 @@ h4 {
   max-width: $container-max-width;
   margin: 0 auto;
   padding: 0 $container-padding;
+  
+  @media (max-width: 576px) {
+    padding: 0 1rem;
+  }
 }
