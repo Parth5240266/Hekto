@@ -718,3 +718,82 @@
       font-size: 18px;
   }
 }
+
+// Shop Grid Sidebar Page Styles
+.shop-grid-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.shop-grid-sidebar-item {
+  display: flex;
+  flex-direction: column;
+
+  .rating-list {
+   
+    .rating-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+}
+
+.shop-grid-sidebar-item-title {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $secondary-color;
+  margin-bottom: 1rem;
+  text-decoration: underline $secondary-color 2px solid;
+}
+
+.shop-grid-sidebar-products {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+}
+
+.shop-grid-sidebar-item{
+  .category-list {
+    color: $text-gray;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .brand-list {
+    color: $text-gray;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .discount-list {
+    color: $text-gray;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .price-list {
+    color: $text-gray;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  } 
+
+  .color-list {
+    color: $text-gray;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .rating-list {
+    color: $text-gray;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -15,6 +15,11 @@ body {
   line-height: 1.6;
   color: $text-dark;
   background-color: $white;
+  padding-top: 125px;
+  
+  @media (max-width: 767px) {
+    padding-top: 215px;
+  }
 }
 
 img {

@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hekto - shop list sidebar</title>
+  <link rel="stylesheet" href="dist/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <a href="mailto:mhhasanul@gmail.com" class="contact-info">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          mhhasanul@gmail.com
+        </a>
+        <a href="tel:(12345)67890" class="contact-info">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          (12345)67890
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <select class="select-language">
+          <option>English <span>▼</span></option>
+        </select>
+        <select class="select-currency">
+          <option>USD <span>▼</span></option>
+        </select>
+        <a href="/login.html" class="login-link">
+          Login
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2" />
+          </svg>
+        </a>
+        <a href="#" class="wishlist-link">
+          Wishlist
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#" class="cart-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19C19.5304 16 20.0391 15.7893 20.4142 15.4142C20.7893 15.0391 21 14.5304 21 14V6C21 5.46957 20.7893 4.96086 20.4142 4.58579C20.0391 4.21071 19.5304 4 19 4H5"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7 16H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1><a href="index.html" style="text-decoration: none; color: inherit;">Hekto</a></h1>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link active">Home <span class="dropdown-caret">▼</span></a>
+          <div class="nav-link pages-dropdown" tabindex="0">Pages <span class="dropdown-caret">▼</span>
+            <div class="dropdown-menu" hidden>
+              <a href="shopGrid.html" class="nav-link">Shop Grid</a>
+              <a href="shopList.html" class="nav-link">Shop List</a>
+              <a href="faq.html" class="nav-link">FAQ</a>
+              <a href="404.html" class="nav-link">404</a>
+            </div>
+          </div>
+          <a href="#" class="nav-link">Products</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link">Shop</a>
+          <a href="#" class="nav-link">Contact</a>
+        </nav>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" class="search-input">
+          <button class="search-btn" aria-label="Search">
+            <img src="src/assets/images/newsletter/searchIcon.png" alt="Search">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Title Section -->
+  <section class="page-title-section">
+    <div class="container">
+      <h1 class="page-title">Shop Grid List</h1>
+      <nav class="breadcrumbs">
+        <a href="index.html" class="breadcrumb-link">Home</a>
+        <span class="breadcrumb-separator">.</span>
+        <a href="#" class="breadcrumb-link">Pages</a>
+        <span class="breadcrumb-separator">.</span>
+        <a href="shopListSidebar.html" class="breadcrumb-link active">Shop List Sidebar</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- 404 Content Section -->
+  <section class="shop-grid-section">
+    <div class="container">
+      <div class="shop-grid-content">
+        <div class="shop-grid-header">
+          <div class="shop-grid-text">Ecommerce Acceories & Fashion item</div>
+          <div class="shop-grid-subtitle">About 3,876 results (0.62 seconds)</div>
+        </div>
+        <div class="shop-grid-filter">
+          <!-- per page , sort by and view as grid or List -->
+          <div class="shop-grid-filter-item">
+            <span>Per Page</span>
+            <select class="shop-grid-filter-select">
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+            </select>
+          </div>
+          <div class="shop-grid-filter-item">
+            <span>Sort By</span>
+            <select class="shop-grid-filter-select">
+              <option value="newest">Newest</option>
+              <option value="oldest">Oldest</option>
+              <option value="price-asc">Price (asc)</option>
+              <option value="price-desc">Price (desc)</option>
+            </select>
+          </div>
+          <div class="shop-grid-filter-item">
+            <span>View As</span>
+            <select class="shop-grid-filter-select">
+              <option value="grid">Grid</option>
+              <option value="list">List</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="shop-grid-sidebar-products">
+        <div class="shop-grid-sidebar">
+          <div class="shop-grid-sidebar-item">
+            <h3 class="shop-grid-sidebar-item-title">product brand</h3>
+            <ul class="brand-list">
+              <li> <input type="checkbox" id="brand1" name="brand1"> <label for="brand1">Brand 1</label></li>
+              <li> <input type="checkbox" id="brand2" name="brand2"> <label for="brand2">Brand 2</label></li>
+              <li> <input type="checkbox" id="brand3" name="brand3"> <label for="brand3">Brand 3</label></li>
+              <li> <input type="checkbox" id="brand4" name="brand4"> <label for="brand4">Brand 4</label></li>
+              <li> <input type="checkbox" id="brand5" name="brand5"> <label for="brand5">Brand 5</label></li>
+              <li> <input type="checkbox" id="brand6" name="brand6"> <label for="brand6">Brand 6</label></li>
+            </ul>
+          </div>
+          <div class="shop-grid-sidebar-item">
+            <h3 class="shop-grid-sidebar-item-title">Discount Offer</h3>
+            <ul class="discount-list">
+              <li> <input type="checkbox" id="discount1" name="discount1"> <label for="discount1">Discount 1</label>
+              </li>
+              <li> <input type="checkbox" id="discount2" name="discount2"> <label for="discount2">Discount 2</label>
+              </li>
+              <li> <input type="checkbox" id="discount3" name="discount3"> <label for="discount3">Discount 3</label>
+              </li>
+            </ul>
+          </div>
+          <div class="shop-grid-sidebar-item">
+            <h3 class="shop-grid-sidebar-item-title">Rating items</h3>
+            <ul class="rating-list">
+              <li class="rating-item"> <input type="checkbox" id="rating1" name="rating1">
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                  </div>
+                </div>
+              </li>
+              <li class="rating-item"> <input type="checkbox" id="rating2" name="rating2">
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-empty">★</span>
+                  </div>
+                </div>
+              </li>
+              <li class="rating-item"> <input type="checkbox" id="rating3" name="rating3">
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-empty">★</span>
+                    <span class="star-empty">★</span>
+                  </div>
+                </div>
+              </li>
+              <li class="rating-item"> <input type="checkbox" id="rating4" name="rating4">
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-empty">★</span>
+                    <span class="star-empty">★</span>
+                    <span class="star-empty">★</span>
+                  </div>
+                </div>
+              </li>
+              <li class="rating-item"> <input type="checkbox" id="rating5" name="rating5">
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star-filled">★</span>
+                    <span class="star-empty">★</span>
+                    <span class="star-empty">★</span>
+                    <span class="star-empty">★</span>
+                    <span class="star-empty">★</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="shop-grid-sidebar-item">
+            <h3 class="shop-grid-sidebar-item-title">Categories</h3>
+            <ul class="category-list">
+              <li> <input type="checkbox" id="category1" name="category1"> <label for="category1">Category 1</label>
+              </li>
+              <li> <input type="checkbox" id="category2" name="category2"> <label for="category2">Category 2</label>
+              </li>
+              <li> <input type="checkbox" id="category3" name="category3"> <label for="category3">Category 3</label>
+              </li>
+              <li> <input type="checkbox" id="category4" name="category4"> <label for="category4">Category 4</label>
+              </li>
+              <li> <input type="checkbox" id="category5" name="category5"> <label for="category5">Category 5</label>
+              </li>
+              <li> <input type="checkbox" id="category6" name="category6"> <label for="category6">Category 6</label>
+              </li>
+            </ul>
+          </div>
+          <div class="shop-grid-sidebar-item">
+            <h3 class="shop-grid-sidebar-item-title">price filter</h3>
+            <ul class="price-list">
+              <li> <input type="checkbox" id="price1" name="price1"> <label for="price1">$0 - $100</label></li>
+              <li> <input type="checkbox" id="price2" name="price2"> <label for="price2">$100 - $200</label></li>
+              <li> <input type="checkbox" id="price3" name="price3"> <label for="price3">$200 - $300</label></li>
+              <li> <input type="checkbox" id="price4" name="price4"> <label for="price4">$300 - $400</label></li>
+              <li> <input type="checkbox" id="price5" name="price5"> <label for="price5">$400 - $500</label></li>
+              <li> <input type="checkbox" id="price6" name="price6"> <label for="price6">$500+</label></li>
+            </ul>
+          </div>
+          <div class="shop-grid-sidebar-item">
+            <h3 class="shop-grid-sidebar-item-title">Filter by color</h3>
+            <ul class="color-list">
+              <li> <input type="radio" id="color1" name="color1"> <label for="color1">Color 1</label></li>
+              <li> <input type="radio" id="color2" name="color2"> <label for="color2">Color 2</label></li>
+              <li> <input type="radio" id="color3" name="color3"> <label for="color3">Color 3</label></li>
+              <li> <input type="radio" id="color4" name="color4"> <label for="color4">Color 4</label></li>
+              <li> <input type="radio" id="color5" name="color5"> <label for="color5">Color 5</label></li>
+              <li> <input type="radio" id="color6" name="color6"> <label for="color6">Color 6</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-list">
+          <div class="product-item">
+            <div class="product-image">
+              <img src="src/assets/images/sidebarShopGrid/watch.jpg" alt="Accumsan tincidunt">
+            </div>
+            <div class="product-details">
+              <div class="product-header">
+                <div class="product-title">
+                  Accumsan tincidunt
+                  <div class="color-dots">
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-red"></div>
+                    <div class="dot dot-purple"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price-section">
+                <div class="price">
+                  <span class="price-current">$26.00</span>
+                  <span class="price-original">$52.00</span>
+                </div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-empty">★</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in
+                justo.
+              </p>
+
+              <div class="product-actions">
+                <button class="action-btn cart-btn" title="Add to cart">🛒</button>
+                <button class="action-btn wishlist-btn" title="Add to wishlist">♡</button>
+                <button class="action-btn zoom-btn" title="Zoom">🔍</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image">
+              <img src="src/assets/images/sidebarShopGrid/waterBottle.jpg" alt="Modern Chair">
+            </div>
+            <div class="product-details">
+              <div class="product-header">
+                <div class="product-title">
+                  Modern Chair
+                  <div class="color-dots">
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-red"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price-section">
+                <div class="price">
+                  <span class="price-current">$45.00</span>
+                  <span class="price-original">$89.00</span>
+                </div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="product-description">
+                Elegant design meets comfort in this contemporary seating solution. Perfect for any modern living space.
+              </p>
+
+              <div class="product-actions">
+                <button class="action-btn cart-btn" title="Add to cart">🛒</button>
+                <button class="action-btn wishlist-btn" title="Add to wishlist">♡</button>
+                <button class="action-btn zoom-btn" title="Zoom">🔍</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image">
+              <img src="src/assets/images/sidebarShopGrid/shoes2.jpg" alt="Modern Chair">
+            </div>
+            <div class="product-details">
+              <div class="product-header">
+                <div class="product-title">
+                  Modern Chair
+                  <div class="color-dots">
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-red"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price-section">
+                <div class="price">
+                  <span class="price-current">$45.00</span>
+                  <span class="price-original">$89.00</span>
+                </div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="product-description">
+                Elegant design meets comfort in this contemporary seating solution. Perfect for any modern living space.
+              </p>
+
+              <div class="product-actions">
+                <button class="action-btn cart-btn" title="Add to cart">🛒</button>
+                <button class="action-btn wishlist-btn" title="Add to wishlist">♡</button>
+                <button class="action-btn zoom-btn" title="Zoom">🔍</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image">
+              <img src="src/assets/images/sidebarShopGrid/lotion.jpg" alt="Modern Chair">
+            </div>
+            <div class="product-details">
+              <div class="product-header">
+                <div class="product-title">
+                  Modern Chair
+                  <div class="color-dots">
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-red"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price-section">
+                <div class="price">
+                  <span class="price-current">$45.00</span>
+                  <span class="price-original">$89.00</span>
+                </div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="product-description">
+                Elegant design meets comfort in this contemporary seating solution. Perfect for any modern living space.
+              </p>
+
+              <div class="product-actions">
+                <button class="action-btn cart-btn" title="Add to cart">🛒</button>
+                <button class="action-btn wishlist-btn" title="Add to wishlist">♡</button>
+                <button class="action-btn zoom-btn" title="Zoom">🔍</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image">
+              <img src="src/assets/images/sidebarShopGrid/shampoo.jpg" alt="Modern Chair">
+            </div>
+            <div class="product-details">
+              <div class="product-header">
+                <div class="product-title">
+                  Modern Chair
+                  <div class="color-dots">
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-red"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price-section">
+                <div class="price">
+                  <span class="price-current">$45.00</span>
+                  <span class="price-original">$89.00</span>
+                </div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="product-description">
+                Elegant design meets comfort in this contemporary seating solution. Perfect for any modern living space.
+              </p>
+
+              <div class="product-actions">
+                <button class="action-btn cart-btn" title="Add to cart">🛒</button>
+                <button class="action-btn wishlist-btn" title="Add to wishlist">♡</button>
+                <button class="action-btn zoom-btn" title="Zoom">🔍</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image">
+              <img src="src/assets/images/sidebarShopGrid/ps5.jpg" alt="Modern Chair">
+            </div>
+            <div class="product-details">
+              <div class="product-header">
+                <div class="product-title">
+                  Modern Chair
+                  <div class="color-dots">
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-red"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price-section">
+                <div class="price">
+                  <span class="price-current">$45.00</span>
+                  <span class="price-original">$89.00</span>
+                </div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="product-description">
+                Elegant design meets comfort in this contemporary seating solution. Perfect for any modern living space.
+              </p>
+
+              <div class="product-actions">
+                <button class="action-btn cart-btn" title="Add to cart">🛒</button>
+                <button class="action-btn wishlist-btn" title="Add to wishlist">♡</button>
+                <button class="action-btn zoom-btn" title="Zoom">🔍</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image">
+              <img src="src/assets/images/sidebarShopGrid/shoes.jpg" alt="Modern Chair">
+            </div>
+            <div class="product-details">
+              <div class="product-header">
+                <div class="product-title">
+                  Modern Chair
+                  <div class="color-dots">
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-red"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price-section">
+                <div class="price">
+                  <span class="price-current">$45.00</span>
+                  <span class="price-original">$89.00</span>
+                </div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                    <span class="star-filled">★</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="product-description">
+                Elegant design meets comfort in this contemporary seating solution. Perfect for any modern living space.
+              </p>
+
+              <div class="product-actions">
+                <button class="action-btn cart-btn" title="Add to cart">🛒</button>
+                <button class="action-btn wishlist-btn" title="Add to wishlist">♡</button>
+                <button class="action-btn zoom-btn" title="Zoom">🔍</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3 class="footer-logo">Hekto</h3>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="Enter Email Address" class="email-input">
+            <button class="btn btn-primary btn-small">Sign Up</button>
+          </div>
+          <div class="footer-contact">
+            <h4 class="contact-heading">Contact Info</h4>
+            <p class="contact-address">17 Princess Road, London, Greater London NW1 8JR, UK</p>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#">Laptops & Computers</a></li>
+            <li><a href="#">Cameras & Photography</a></li>
+            <li><a href="#">Smart Phones & Tablets</a></li>
+            <li><a href="#">Video Games & Consoles</a></li>
+            <li><a href="#">Waterproof Headphones</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Orders History</a></li>
+            <li><a href="#">Order Tracking</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Browse the Shop</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Pre-Built Pages</a></li>
+            <li><a href="#">Visual Composer Elements</a></li>
+            <li><a href="#">WooCommerce Pages</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright-text">©Webecy - All Rights Reserved</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon"> <img src="src/assets/images/footer/facebook.png" alt="Facebook"></a>
+          <a href="#" class="social-icon"> <img src="src/assets/images/footer/instagram.png" alt="Instagram"></a>
+          <a href="#" class="social-icon"> <img src="src/assets/images/footer/twitter.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/main.js"></script>
+</body>
+
+</html>
