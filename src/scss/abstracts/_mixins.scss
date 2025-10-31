@@ -25,32 +25,48 @@
 // Responsive breakpoints
 @mixin respond-to($breakpoint) {
   @if $breakpoint == sm {
-    @media (min-width: $breakpoint-sm) { @content; }
+    @media (min-width: $breakpoint-sm) {
+      @content;
+    }
   }
   @if $breakpoint == md {
-    @media (min-width: $breakpoint-md) { @content; }
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
   }
   @if $breakpoint == lg {
-    @media (min-width: $breakpoint-lg) { @content; }
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
   }
   @if $breakpoint == xl {
-    @media (min-width: $breakpoint-xl) { @content; }
+    @media (min-width: $breakpoint-xl) {
+      @content;
+    }
   }
 }
 
 // Max-width responsive mixins (for larger screens)
 @mixin respond-below($breakpoint) {
   @if $breakpoint == sm {
-    @media (max-width: 575px) { @content; }
+    @media (max-width: 575px) {
+      @content;
+    }
   }
   @if $breakpoint == md {
-    @media (max-width: 767px) { @content; }
+    @media (max-width: 767px) {
+      @content;
+    }
   }
   @if $breakpoint == lg {
-    @media (max-width: 991px) { @content; }
+    @media (max-width: 991px) {
+      @content;
+    }
   }
   @if $breakpoint == xl {
-    @media (max-width: 1199px) { @content; }
+    @media (max-width: 1199px) {
+      @content;
+    }
   }
 }
 

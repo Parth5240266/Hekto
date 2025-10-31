@@ -1,0 +1,414 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.single-blog-page {
+  padding: $spacing-xxl 0;
+
+  .blog-layout {
+    display: grid;
+    grid-template-columns: 4fr 1.5fr;
+    gap: $spacing-xxl;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .single-post {
+    display: grid;
+    gap: $spacing-lg;
+  }
+
+  .post-hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .blog-post-meta {
+    display: flex;
+    gap: $spacing-md;
+    align-items: center;
+  }
+
+  .blog-meta-item {
+    display: flex;
+    gap: $spacing-sm;
+    align-items: center;
+  }
+
+  .author-icon,
+  .date-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .badge {
+    background: #ffe7f0;
+    color: $secondary-color;
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    border-radius: 3px;
+  }
+
+  .post-title {
+    color: $secondary-color;
+  }
+
+  .post-paragraph {
+    color: $text-gray;
+  }
+
+  .quote-box {
+    background: #f6f7fb;
+    border-radius: 4px;
+    padding: $spacing-md;
+    color: $secondary-color;
+    border-left: 4px solid $primary-color;
+  }
+
+  .post-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-lg;
+  }
+
+  .post-gallery .video {
+    position: relative;
+  }
+
+  .gallery-item {
+    background: #eaeff6;
+    height: 160px;
+    border-radius: 6px;
+  }
+
+  .related-products-section {
+    margin-top: $spacing-xl;
+  }
+
+  .related-products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $spacing-md;
+  }
+
+  .related-card {
+    overflow: hidden;
+  }
+
+  .related-image-blog {
+    height: 200px;
+    background: #f6f7fb;
+  }
+
+  .related-info {
+    padding: $spacing-sm 0;
+  }
+
+  .related-name {
+    color: $secondary-color;
+    font-size: 1.125rem;
+    margin-left: $spacing-sm;
+  }
+  .related-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-xs;
+  }
+
+  .price {
+    color: $secondary-color;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+
+  .old-price {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: line-through;
+  }
+
+  .post-pagination {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: $spacing-md;
+    margin-top: $spacing-lg;
+  }
+
+  .post-pagination .prev,
+  .post-pagination .next {
+    color: $text-gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: $spacing-sm;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .post-pagination .share-icons {
+    display: flex;
+    gap: $spacing-sm;
+    justify-content: center;
+  }
+
+  .post-pagination img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .comments {
+    display: grid;
+    gap: $spacing-md;
+  }
+
+  .comment-item {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: $spacing-sm;
+    align-items: start;
+    padding: $spacing-sm;
+    border: 1px solid $border-gray;
+    border-radius: 6px;
+    background: $white;
+  }
+
+  .comment-thumb {
+    width: 56px;
+    height: 56px;
+    background: #eaeff6;
+    border-radius: 6px;
+  }
+
+  .comment-meta {
+    color: $secondary-color;
+    margin-bottom: 2px;
+    font-size: 0.9375rem;
+  }
+
+  .comment-meta span {
+    color: $text-gray;
+    font-size: 0.8125rem;
+    margin-left: 6px;
+  }
+
+  .comment-text {
+    color: $text-gray;
+  }
+
+  .comment-form {
+    display: grid;
+    gap: $spacing-md;
+    margin-top: $spacing-lg;
+    padding-top: $spacing-sm;
+    border-top: 1px solid $border-gray;
+  }
+
+  .comment-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-md;
+  }
+
+  .comment-form input,
+  .comment-form textarea {
+    border: 1px solid $border-gray;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 0.9375rem;
+  }
+
+  .comment-form .remember {
+    color: $text-gray;
+    font-size: 0.875rem;
+  }
+
+  .comment-form .btn {
+    width: 220px;
+    justify-self: center;
+  }
+}
+
+// Sidebar styles (mirrors blog page sidebar)
+.single-blog-page {
+  .blog-sidebar {
+    display: grid;
+    gap: $spacing-lg;
+    align-content: start;
+  }
+
+  .widget-title {
+    color: $secondary-color;
+    margin-bottom: $spacing-md;
+    font-weight: 600;
+  }
+
+  .widget {
+    background: $white;
+    padding: $spacing-md;
+  }
+
+  .widget-search .search-input-wrap {
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    input {
+      border: 1px solid $border-gray;
+      padding: 10px 12px;
+      border-radius: 4px;
+      font-size: 0.875rem;
+    }
+
+    button {
+      background: $primary-color;
+      border: 0;
+      padding: 10px 12px;
+      border-radius: 4px;
+      display: grid;
+      place-items: center;
+    }
+
+    button img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .category-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-sm;
+
+    li {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      column-gap: $spacing-sm;
+      color: $text-gray;
+    }
+
+    a {
+      color: $secondary-color;
+      font-size: 0.9375rem;
+    }
+
+    a:hover {
+      color: $primary-color;
+    }
+
+    li:first-child a {
+      background: #fb2e86;
+      color: $white;
+      padding: 4px 8px;
+      border-radius: 3px;
+      display: inline-block;
+    }
+  }
+
+  .recent-list,
+  .sale-list {
+    display: grid;
+    gap: $spacing-md;
+  }
+
+  .recent-list li,
+  .sale-list li {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: $spacing-sm;
+    align-items: center;
+  }
+
+  .recent-list .thumb,
+  .sale-list .thumb {
+    width: 60px;
+    height: 48px;
+    background: #eaeff6;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .recent-text p {
+    color: $secondary-color;
+    margin-bottom: 2px;
+    font-size: 0.875rem;
+  }
+
+  .recent-text span {
+    color: $text-gray;
+    font-size: 0.8125rem;
+  }
+
+  .sale-text p {
+    color: $secondary-color;
+    margin-bottom: 2px;
+    font-size: 0.875rem;
+  }
+
+  .sale-text span {
+    color: $text-gray;
+    font-size: 0.8125rem;
+  }
+
+  .offer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-xl;
+
+    li {
+      background: #f6f7fb;
+      height: 90px;
+      border-radius: 4px;
+      margin-bottom: $spacing-sm;
+
+      .offer-content {
+        padding: $spacing-sm 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h5 {
+          color: $secondary-color;
+          font-size: 0.875rem;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 0.75rem;
+          font-weight: 400;
+          color: $text-gray;
+        }
+      }
+    }
+  }
+  .follow-icons {
+    display: flex;
+    gap: $spacing-sm;
+    align-items: center;
+  }
+
+  .follow-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+  }
+
+  .tag-cloud a {
+    background: #f6f7fb;
+    padding: 6px 10px;
+    border-radius: 3px;
+    color: $secondary-color;
+  }
+}

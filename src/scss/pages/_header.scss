@@ -3,7 +3,7 @@
 
 // Top Bar
 .top-bar {
-  background: #7E33E0;
+  background: #7e33e0;
   padding: $spacing-xs 0;
   position: fixed;
   top: 0;
@@ -65,13 +65,13 @@
     padding: 0.25rem 0.5rem;
     appearance: none;
     background-image: none;
-    
+
     &::-ms-expand {
       display: none;
     }
 
     option {
-      background: #7E33E0;
+      background: #7e33e0;
       color: $white;
     }
   }
@@ -189,7 +189,10 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(-10px);
-        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+        transition:
+          opacity 0.3s ease,
+          visibility 0.3s ease,
+          transform 0.3s ease;
         pointer-events: none;
 
         &[hidden] {
@@ -219,7 +222,9 @@
           white-space: nowrap;
           border: none;
           background: transparent;
-          transition: background 0.2s ease, color 0.2s ease;
+          transition:
+            background 0.2s ease,
+            color 0.2s ease;
 
           &:hover {
             background: $light-gray;
@@ -283,10 +288,9 @@
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  
+
   svg {
     width: 24px;
     height: 24px;
   }
 }
-

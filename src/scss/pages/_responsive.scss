@@ -12,7 +12,7 @@
       gap: $spacing-xs;
       text-align: center;
     }
-    
+
     .top-bar-left,
     .top-bar-right {
       flex-wrap: wrap;
@@ -20,107 +20,107 @@
       gap: 0.75rem;
       font-size: 0.75rem;
     }
-    
+
     .contact-info {
       font-size: 0.75rem;
-      
+
       svg {
         width: 14px;
         height: 14px;
       }
     }
   }
-  
+
   // Header
   .main-header {
     padding: $spacing-sm 0;
     top: 66px;
-    
+
     .header-content {
       flex-wrap: wrap;
       gap: $spacing-sm;
     }
-    
+
     .logo h1 {
       font-size: 1.5rem;
     }
-    
+
     .main-nav {
       gap: $spacing-xs;
     }
-    
+
     .search-bar {
       width: 100%;
-      
+
       .search-input {
         width: 100%;
         font-size: 0.875rem;
         padding: 0.4rem 0.75rem;
       }
-      
+
       .search-btn {
         padding: 0.4rem 0.5rem;
       }
     }
-    
+
     .mobile-menu-toggle {
       display: flex;
     }
   }
-  
+
   // Hero Section
   .hero {
     padding: $spacing-lg 0;
-    
+
     .hero-slider {
       .hero-slides {
         min-height: 500px;
       }
     }
-    
+
     .hero-content {
       grid-template-columns: 1fr;
       gap: $spacing-md;
     }
-    
+
     .hero-left {
       .hero-image-left {
         display: none; // Hide decorative lamp on mobile
       }
-      
+
       .hero-title {
         font-size: 2rem;
         margin-bottom: $spacing-sm;
       }
-      
+
       .hero-subtitle {
         font-size: 0.875rem;
       }
-      
+
       .hero-description {
         font-size: 0.875rem;
         margin-bottom: $spacing-md;
       }
     }
-    
+
     .hero-right {
       .hero-chair-container {
         height: 400px;
-        
+
         .hero-circle,
         .hero-circle-2 {
           width: 300px;
           height: 300px;
         }
-        
+
         .floating-badge {
           width: 100px;
           height: 100px;
-          
+
           .badge-number {
             font-size: 1.5rem;
           }
-          
+
           .badge-text {
             font-size: 1.25rem;
           }
@@ -150,104 +150,103 @@
       margin-top: $spacing-lg;
     }
   }
-  
+
   // Products Section
   .products-section {
-    
     .section-title {
       font-size: 1.5rem;
       margin-bottom: $spacing-md;
     }
   }
-  
+
   // Latest Products
   .latest-products-section {
     padding: $spacing-lg 0;
-    
+
     .product-tabs {
       flex-wrap: wrap;
       gap: $spacing-sm;
-      
+
       .product-tab {
         font-size: 0.875rem;
         padding: 0.5rem 1rem;
       }
     }
-    
+
     .latest-products-grid {
       gap: $spacing-sm;
     }
   }
-  
+
   // Product Cards
   .product-card,
   .latest-product-card {
     .product-image-container,
     .latest-product-image-container {
       padding: $spacing-sm;
-      
+
       img {
         height: 180px;
       }
     }
-    
+
     .product-info {
       padding: $spacing-sm;
-      
+
       .product-name {
         font-size: 1rem;
       }
     }
   }
-  
+
   // Offers Section
   .offers-section {
     padding: $spacing-lg 0;
-    
+
     .offers-grid {
       grid-template-columns: 1fr;
       gap: $spacing-md;
     }
-    
+
     .offer-card {
       padding: $spacing-md;
-      
+
       .offer-icon {
         font-size: 2rem;
       }
-      
+
       h3 {
         font-size: 1.125rem;
       }
-      
+
       p {
         font-size: 0.875rem;
       }
     }
   }
-  
+
   // Features Section
   .features-section {
     padding: $spacing-lg 0;
-    
+
     .features-content {
       grid-template-columns: 1fr;
       gap: $spacing-md;
     }
-    
+
     .features-image {
       img {
         max-height: 300px;
         object-fit: contain;
       }
     }
-    
+
     .features-text {
       h2 {
         font-size: 1.5rem;
         margin-bottom: $spacing-md;
       }
-      
+
       .features-list {
         li {
           font-size: 0.875rem;
@@ -256,82 +255,81 @@
       }
     }
   }
-  
-  
+
   // Discount Section
   .discount-section {
     padding: $spacing-lg 0;
-    
+
     .section-title {
       font-size: 1.5rem;
     }
-    
+
     .discount-nav {
       flex-wrap: wrap;
       gap: $spacing-sm;
-      
+
       .discount-nav-link {
         font-size: 0.875rem;
       }
     }
-    
+
     .discount-content {
       grid-template-columns: 1fr;
       gap: $spacing-md;
       padding: $spacing-sm;
     }
-    
+
     .discount-text {
       .discount-title {
         font-size: 1.75rem;
         white-space: normal;
       }
-      
+
       .discount-product-name {
         font-size: 1rem;
       }
-      
+
       .discount-description {
         font-size: 0.875rem;
       }
-      
+
       .discount-features-list {
         grid-template-columns: 1fr;
-        
+
         li {
           font-size: 0.875rem;
         }
       }
     }
-    
+
     .discount-image {
       min-height: 300px;
-      
+
       .discount-image-container {
         width: 250px;
         height: 250px;
       }
-      
+
       img {
         max-width: 100%;
       }
     }
   }
-  
+
   // Newsletter
   .newsletter-section {
     padding: $spacing-lg 0;
-    
+
     .newsletter-content {
       min-height: 300px;
-      
+
       .newsletter-text {
         h2 {
           font-size: 1.75rem;
           margin-bottom: $spacing-md;
         }
       }
-      
+
       .newsletter-form {
         .btn-newsletter {
           padding: 0.875rem 2rem;
@@ -340,35 +338,34 @@
       }
     }
   }
-  
+
   // Blog Section
   .blog-section {
     padding: $spacing-lg 0;
-    
+
     .section-title {
       font-size: 1.5rem;
     }
-    
+
     .blog-grid {
       grid-template-columns: 1fr;
       gap: $spacing-md;
     }
   }
-  
+
   // Categories
   .categories-section {
     padding: $spacing-lg 0;
-    
+
     .section-title {
       font-size: 1.5rem;
     }
-    
+
     .categories-grid {
       grid-template-columns: repeat(2, 1fr);
       gap: $spacing-md;
 
       .category-card {
-
         .category-image-container {
           .category-view-all {
             right: 38px;
@@ -378,47 +375,46 @@
       }
     }
   }
-  
+
   // Promotional Section
   .promotional-section {
-    
     .promotional-grid {
       grid-template-columns: 1fr;
       gap: $spacing-md;
       height: auto;
-      
+
       .promotional-banner {
         height: 300px;
         padding: $spacing-lg;
-        
+
         .promotional-title {
           font-size: 1.25rem;
           margin-bottom: $spacing-sm;
         }
-        
+
         .promotional-link {
           font-size: 0.875rem;
         }
-        
+
         .promotional-image {
           width: 50%;
         }
       }
-      
+
       .product-list {
         .product-list-item {
           padding: $spacing-sm;
-          
+
           .product-list-image {
             width: 60px;
             height: 60px;
           }
-          
+
           .product-list-content {
             .product-list-name {
               font-size: 0.875rem;
             }
-            
+
             .product-list-price {
               font-size: 0.875rem;
             }
@@ -427,21 +423,21 @@
       }
     }
   }
-  
+
   // Footer
   .main-footer {
     padding: $spacing-lg 0 0;
-    
+
     .footer-content {
       grid-template-columns: 1fr;
       gap: $spacing-md;
       margin-bottom: $spacing-lg;
     }
-    
+
     .footer-logo {
       font-size: 2rem;
     }
-    
+
     .footer-title {
       font-size: 1rem;
     }
@@ -463,11 +459,11 @@
         font-size: 2.5rem;
       }
     }
-    
+
     .hero-right {
       .hero-chair-container {
         height: 500px;
-        
+
         .hero-circle,
         .hero-circle-2 {
           width: 400px;
@@ -486,63 +482,63 @@
       }
     }
   }
-  
+
   // Products Grid
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .latest-products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .blog-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .offers-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   // Features
   .features-content {
     gap: $spacing-lg;
   }
-  
+
   // Discount
   .discount-content {
     padding: $spacing-lg;
     gap: $spacing-lg;
   }
-  
+
   .discount-text {
     .discount-title {
       font-size: 2.25rem;
     }
   }
-  
+
   // Promotional Section
   .promotional-section {
     .promotional-grid {
       grid-template-columns: 1fr 1fr;
       gap: $spacing-md;
       height: auto;
-      
+
       .promotional-banner {
         height: 350px;
-        
+
         .promotional-title {
           font-size: 1.375rem;
         }
       }
-      
+
       .product-list {
         grid-column: 1 / -1;
-        
+
         .product-list-item {
           .product-list-image {
             width: 70px;
@@ -559,12 +555,12 @@
   .container {
     padding: 0 1rem;
   }
-  
+
   .section-title {
     font-size: 1.25rem;
     margin-bottom: $spacing-md;
   }
-  
+
   .hero {
     .hero-slider {
       .hero-slides {
@@ -605,7 +601,7 @@
       }
     }
   }
-  
+
   .products-grid,
   .latest-products-grid,
   .blog-grid,
@@ -614,58 +610,58 @@
     grid-template-columns: 1fr;
     gap: $spacing-md;
   }
-  
+
   .top-bar {
     font-size: 0.7rem;
-    
+
     .top-bar-left,
     .top-bar-right {
       font-size: 0.7rem;
     }
   }
-  
+
   .discount-text {
     .discount-title {
       font-size: 1.5rem;
     }
   }
-  
+
   .offers-section {
     .offers-grid {
       grid-template-columns: 1fr;
     }
   }
-  
+
   // Promotional Section
   .promotional-section {
     .promotional-grid {
       .promotional-banner {
         height: 250px;
         padding: $spacing-md;
-        
+
         .promotional-title {
           font-size: 1.125rem;
         }
-        
+
         .promotional-image {
           width: 45%;
         }
       }
-      
+
       .product-list {
         .product-list-item {
           padding: $spacing-xs $spacing-sm;
-          
+
           .product-list-image {
             width: 50px;
             height: 50px;
           }
-          
+
           .product-list-content {
             .product-list-name {
               font-size: 0.8rem;
             }
-            
+
             .product-list-price {
               font-size: 0.8rem;
             }
@@ -721,7 +717,7 @@
   .categories-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .blog-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -750,4 +746,3 @@
     }
   }
 }
-

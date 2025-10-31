@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hekto - Single Blog</title>
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <a href="mailto:mhhasanul@gmail.com" class="contact-info">mhhasanul@gmail.com</a>
+          <a href="tel:(12345)67890" class="contact-info">(12345)67890</a>
+        </div>
+        <div class="top-bar-right">
+          <select class="select-language">
+            <option>English</option>
+          </select>
+          <select class="select-currency">
+            <option>USD</option>
+          </select>
+          <a href="/login.html" class="login-link">Login</a>
+          <a href="#" class="wishlist-link">Wishlist</a>
+          <a href="#" class="cart-link">Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1><a href="index.html" style="text-decoration: none; color: inherit">Hekto</a></h1>
+          </div>
+          <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home <span class="dropdown-caret">▼</span></a>
+            <div class="nav-link pages-dropdown" tabindex="0">
+              Pages <span class="dropdown-caret">▼</span>
+              <div class="dropdown-menu" hidden>
+                <a href="shopGrid.html" class="nav-link">Shop Grid</a>
+                <a href="shopList.html" class="nav-link">Shop List</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="404.html" class="nav-link">404</a>
+              </div>
+            </div>
+            <a href="#" class="nav-link">Products</a>
+            <a href="blog.html" class="nav-link active">Blog</a>
+            <a href="#" class="nav-link">Shop</a>
+            <a href="#" class="nav-link">Contact</a>
+          </nav>
+          <div class="search-bar">
+            <input type="text" placeholder="Search" class="search-input" />
+            <button class="search-btn" aria-label="Search">
+              <img src="src/assets/images/newsletter/searchIcon.png" alt="Search" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="page-title-section">
+      <div class="container">
+        <h1 class="page-title">Single Blog</h1>
+        <nav class="breadcrumbs">
+          <a href="index.html" class="breadcrumb-link">Home</a>
+          <span class="breadcrumb-separator">.</span>
+          <a class="breadcrumb-link">Pages</a>
+          <span class="breadcrumb-separator">.</span>
+          <a href="singleblog.html" class="breadcrumb-link active">Single Blog</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Single Blog Content -->
+    <section class="single-blog-page">
+      <div class="container">
+        <div class="blog-layout">
+          <!-- Left: Article -->
+          <article class="single-post">
+            <div class="post-hero-image">
+              <img src="src/assets/images/BlogImages/JIUjvqe2ZHg.png" alt="Post" />
+            </div>
+            <div class="blog-post-meta">
+              <div class="blog-meta-item">
+                <img
+                  src="src/assets/images/BlogImages/AuthorIcon.png"
+                  alt="Author"
+                  class="author-icon"
+                />
+                <span class="badge">Surf Auxion</span>
+              </div>
+              <div class="blog-meta-item">
+                <img
+                  src="src/assets/images/BlogImages/uil_calendar-alt.png"
+                  alt="Date"
+                  class="date-icon"
+                />
+                <span class="badge">Aug 09 2020</span>
+              </div>
+            </div>
+            <h4 class="post-title">Mauris at orci non vulputate diam tincidunt nec.</h4>
+            <p class="post-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor
+              pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta
+              dignissim. Adipiscing purus, cursus vulputate id id dictum at.
+            </p>
+            <p class="post-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dipisum ac, nunc,
+              mattis. lacus consectetur integer viverra. Sit amet dictum lorem ut euismod, massa.
+              Varius in eu libero, id sollicitudin. Aliquam vitae nunc, sit aliquam massa tellus
+              massa. Venenatis, sit mi platea mi sed vestibulum. Morbi massa laoreet malesuada lorem
+              semper nisl diam velit, bibendum velit, mi nunc.
+            </p>
+
+            <div class="quote-box">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet,
+              consequat, accumsan. Cursus amet, amet."
+            </div>
+
+            <div class="post-gallery">
+              <div class="gallery-item video"></div>
+              <div class="gallery-item"></div>
+            </div>
+
+            <p class="post-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dipisum ac, nunc,
+              mattis. lacus consectetur integer viverra. Sit amet dictum lorem ut euismod, massa.
+              Varius in eu libero, id sollicitudin. Aliquam vitae nunc, sit aliquam massa tellus
+              massa. Venenatis, sit mi platea mi sed vestibulum. Morbi massa laoreet malesuada lorem
+              semper nisl diam velit, bibendum velit, mi nunc.
+            </p>
+
+            <div class="related-products-section">
+              <h3 class="related-products-title">Related Products</h3>
+              <div class="related-products-grid">
+                <div class="related-card">
+                  <div class="related-image-blog"></div>
+                  <div class="related-info">
+                    <h4 class="related-name">Quam sed</h4>
+                    <div class="related-meta">
+                      <span class="price">$52.00</span>
+                      <span class="old-price">$57.00</span>
+
+                      <div class="rating">
+                        <div class="stars">
+                          <span class="star-filled">★</span>
+                          <span class="star-filled">★</span>
+                          <span class="star-filled">★</span>
+                          <span class="star-filled">★</span>
+                          <span class="star-empty">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="related-card">
+                  <div class="related-image-blog"></div>
+                  <div class="related-info">
+                    <h4 class="related-name">Tristique sed</h4>
+                    <div class="related-meta">
+                      <span class="price">$52.00</span>
+                      <span class="old-price">$57.00</span>
+
+                      <div class="rating">
+                        <div class="stars">
+                          <span class="star-filled">★</span>
+                          <span class="star-filled">★</span>
+                          <span class="star-filled">★</span>
+                          <span class="star-filled">★</span>
+                          <span class="star-empty">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="related-card">
+                  <div class="related-image-blog"></div>
+                  <div class="related-info">
+                    <h4 class="related-name">A etiam</h4>
+                    <div class="related-meta">
+                      <span class="price">$52.00</span>
+                      <span class="old-price">$57.00</span>
+
+                      <div class="rating">
+                        <div class="stars">
+                          <span class="star-filled">★</span>
+                          <span class="star-filled">★</span>
+                          <span class="star-filled">★</span>
+                          <span class="star-filled">★</span>
+                          <span class="star-empty">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="related-card">
+                  <div class="related-image-blog"></div>
+                  <div class="related-info">
+                    <h4 class="related-name">Mi nisl</h4>
+                    <div class="related-meta">
+                      <span class="price">$52.00</span>
+                      <span class="old-price">$57.00</span>
+
+                      <div class="rating">
+                        <div class="stars">
+                          <span class="star-filled">★</span>
+                          <span class="star-filled">★</span>
+                          <span class="star-filled">★</span>
+                          <span class="star-filled">★</span>
+                          <span class="star-empty">★</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-pagination">
+              <a href="#" class="prev">← Previous Post</a>
+              <div class="share-icons">
+                <a href="#"><img src="src/assets/images/footer/facebook.png" alt="fb" /></a>
+                <a href="#"><img src="src/assets/images/footer/instagram.png" alt="ig" /></a>
+                <a href="#"><img src="src/assets/images/footer/twitter.png" alt="tw" /></a>
+              </div>
+              <a href="#" class="next">Next Post →</a>
+            </div>
+
+            <div class="comments">
+              <div class="comment-item">
+                <div class="comment-thumb"></div>
+                <div class="comment-body">
+                  <div class="comment-meta">Sapien ac <span>Aug 09 2020</span></div>
+                  <p class="comment-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae viverra ornare
+                    sit nunc, montes.
+                  </p>
+                </div>
+              </div>
+              <div class="comment-item">
+                <div class="comment-thumb"></div>
+                <div class="comment-body">
+                  <div class="comment-meta">Augue conva <span>Aug 09 2020</span></div>
+                  <p class="comment-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae viverra ornare
+                    sit nunc, montes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <form class="comment-form">
+              <div class="form-row">
+                <input type="text" placeholder="Your Name*" />
+                <input type="email" placeholder="Write Your Email*" />
+              </div>
+              <textarea rows="6" placeholder="Write your comment*"></textarea>
+              <label class="remember"
+                ><input type="checkbox" /> Save my name, email, and website in this browser for the
+                next time I comment.</label
+              >
+              <button class="btn btn-primary">Continue Shipping</button>
+            </form>
+          </article>
+
+          <!-- Right: Sidebar -->
+          <aside class="blog-sidebar">
+            <div class="widget widget-search">
+              <h4 class="widget-title">Search</h4>
+              <div class="search-input-wrap">
+                <input type="text" placeholder="Search here..." />
+                <button aria-label="search">
+                  <img src="src/assets/images/newsletter/searchIcon.png" alt="search" />
+                </button>
+              </div>
+            </div>
+
+            <div class="widget widget-categories">
+              <h4 class="widget-title">Categories</h4>
+              <ul class="category-list">
+                <li><a href="#">Hobbies</a><span>(14)</span></li>
+                <li><a href="#">Women</a><span>(21)</span></li>
+                <li><a href="#">Women</a><span>(19)</span></li>
+                <li><a href="#">Women</a><span>(18)</span></li>
+              </ul>
+            </div>
+
+            <div class="widget widget-recent">
+              <h4 class="widget-title">Recent Post</h4>
+              <ul class="recent-list">
+                <li>
+                  <span class="thumb"></span>
+                  <div class="recent-text">
+                    <p>It is a long established fact</p>
+                    <span>Aug 09 2020</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="thumb"></span>
+                  <div class="recent-text">
+                    <p>It is a long established fact</p>
+                    <span>Aug 09 2020</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="thumb"></span>
+                  <div class="recent-text">
+                    <p>It is a long established fact</p>
+                    <span>Aug 09 2020</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="widget widget-sale">
+              <h4 class="widget-title">Sale Product</h4>
+              <ul class="sale-list">
+                <li>
+                  <span class="thumb"></span>
+                  <div class="sale-text">
+                    <p>Duis lectus est.</p>
+                    <span>$12.00 – $15.00</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="thumb"></span>
+                  <div class="sale-text">
+                    <p>Sed placerat.</p>
+                    <span>$15.00 – $20.00</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="widget widget-offer">
+              <h4 class="widget-title">Offer product</h4>
+              <ul class="offer-grid">
+                <li>
+                  <img src="src/assets/images/Blog/blog1.jpg" alt="Offer 1" />
+                  <div class="offer-content">
+                    <h5>Offer 1</h5>
+                    <p>$12.00 - $15.00</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="src/assets/images/Blog/blog1.jpg" alt="Offer 1" />
+                  <div class="offer-content">
+                    <h5>Offer 1</h5>
+                    <p>$12.00 - $15.00</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="src/assets/images/Blog/blog1.jpg" alt="Offer 1" />
+                  <div class="offer-content">
+                    <h5>Offer 1</h5>
+                    <p>$12.00 - $15.00</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="src/assets/images/Blog/blog1.jpg" alt="Offer 1" />
+                  <div class="offer-content">
+                    <h5>Offer 1</h5>
+                    <p>$12.00 - $15.00</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="widget widget-follow">
+              <h4 class="widget-title">Follow</h4>
+              <div class="follow-icons">
+                <a href="#"><img src="src/assets/images/footer/facebook.png" alt="facebook" /></a>
+                <a href="#"><img src="src/assets/images/footer/instagram.png" alt="instagram" /></a>
+                <a href="#"><img src="src/assets/images/footer/twitter.png" alt="twitter" /></a>
+              </div>
+            </div>
+
+            <div class="widget widget-tags">
+              <h4 class="widget-title">Tags</h4>
+              <div class="tag-cloud">
+                <a href="#">General</a>
+                <a href="#">Atsanil</a>
+                <a href="#">Insas</a>
+                <a href="#">Bibsaas</a>
+                <a href="#">Nulla</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3 class="footer-logo">Hekto</h3>
+            <div class="footer-newsletter">
+              <input type="email" placeholder="Enter Email Address" class="email-input" />
+              <button class="btn btn-primary btn-small">Sign Up</button>
+            </div>
+            <div class="footer-contact">
+              <h4 class="contact-heading">Contact Info</h4>
+              <p class="contact-address">17 Princess Road, London, Greater London NW1 8JR, UK</p>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Categories</h4>
+            <ul class="footer-links">
+              <li><a href="#">Laptops & Computers</a></li>
+              <li><a href="#">Cameras & Photography</a></li>
+              <li><a href="#">Smart Phones & Tablets</a></li>
+              <li><a href="#">Video Games & Consoles</a></li>
+              <li><a href="#">Waterproof Headphones</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Customer Care</h4>
+            <ul class="footer-links">
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Discount</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Orders History</a></li>
+              <li><a href="#">Order Tracking</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Pages</h4>
+            <ul class="footer-links">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Browse the Shop</a></li>
+              <li><a href="#">Category</a></li>
+              <li><a href="#">Pre-Built Pages</a></li>
+              <li><a href="#">Visual Composer Elements</a></li>
+              <li><a href="#">WooCommerce Pages</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright-text">©Webecy - All Rights Reserved</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon">
+              <img src="src/assets/images/footer/facebook.png" alt="Facebook"
+            /></a>
+            <a href="#" class="social-icon">
+              <img src="src/assets/images/footer/instagram.png" alt="Instagram"
+            /></a>
+            <a href="#" class="social-icon">
+              <img src="src/assets/images/footer/twitter.png" alt="Twitter"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+  </body>
+</html>

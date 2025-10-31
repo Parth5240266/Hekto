@@ -36,15 +36,19 @@ npm install
 ### Development
 
 Start development with live reload:
+
 ```bash
 npm start
 ```
+
 This will:
+
 - Watch SCSS files and auto-compile on changes
 - Start a live server on http://localhost:3000
 - Automatically refresh the browser when files change
 
 Or run commands separately:
+
 ```bash
 npm run sass    # Watch and compile SCSS
 npm run serve   # Start live server on port 3000
@@ -66,8 +70,8 @@ Edit `src/data/products.json` and add new product entries:
   "id": 13,
   "name": "Product Name",
   "image": "assets/images/your-image.png",
-  "price": 45.00,
-  "originalPrice": 68.00,
+  "price": 45.0,
+  "originalPrice": 68.0,
   "colors": ["#FF8A9D", "#7BBDFF"],
   "rating": 4,
   "isFeatured": true,
@@ -77,6 +81,7 @@ Edit `src/data/products.json` and add new product entries:
 ```
 
 **Product Properties:**
+
 - `isFeatured: true` - Shows in Featured Products section
 - `isTrending: true` - Shows in Trending Products section
 - `badge: "New"` - Adds a badge to the product card
@@ -100,17 +105,22 @@ Edit `src/data/products.json` and add new product entries:
 ## Customization
 
 ### Colors
+
 Edit `src/scss/abstracts/_variables.scss` to change the color scheme:
+
 - `$primary-color` - Pink accent color
 - `$secondary-color` - Dark blue for text
 - `$text-gray` - Gray text color
 
 ### Fonts
+
 The site uses Google Fonts:
+
 - **Josefin Sans** - Headings
 - **Lato** - Body text
 
 To change fonts, edit:
+
 1. Font family in `_variables.scss`
 2. Google Fonts link in `index.html`
 

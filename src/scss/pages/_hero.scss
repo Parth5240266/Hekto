@@ -3,7 +3,7 @@
 
 // Hero Section
 .hero {
-  background:#F2F0FF;
+  background: #f2f0ff;
   padding: $spacing-xxl 0 $spacing-xl;
   overflow: hidden;
   position: relative;
@@ -80,7 +80,7 @@
         position: absolute;
         width: 500px;
         height: 500px;
-        background:#ECD2FA59;
+        background: #ecd2fa59;
         border-radius: 50%;
         z-index: 1;
         top: 55%;
@@ -95,7 +95,7 @@
         transform: translate(-50%, -50%);
         width: 500px;
         height: 500px;
-        background:#ECD2FA59;
+        background: #ecd2fa59;
         border-radius: 50%;
         z-index: 1;
       }
@@ -113,7 +113,7 @@
         top: 0;
         right: 20px;
         z-index: 3;
-        background-image: url('/src/assets/images/backgronudImages/floatingBadge.png');
+        background-image: url("/src/assets/images/backgronudImages/floatingBadge.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -162,7 +162,9 @@
       width: 100%;
       opacity: 0;
       visibility: hidden;
-      transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+      transition:
+        opacity 0.5s ease-in-out,
+        visibility 0.5s ease-in-out;
 
       &.active {
         opacity: 1;
@@ -260,7 +262,8 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 1;
   }
@@ -272,7 +275,6 @@
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0);
@@ -282,4 +284,3 @@
     transform: translateY(-10px);
   }
 }
-

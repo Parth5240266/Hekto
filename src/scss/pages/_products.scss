@@ -61,7 +61,7 @@
       }
 
       &.active {
-        background: #FB2E86;
+        background: #fb2e86;
         width: 16px;
         height: 16px;
         box-shadow: 0 4px 12px rgba(251, 46, 134, 0.4);
@@ -100,7 +100,7 @@
         color: $primary-color;
 
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: -5px;
           left: 0;
@@ -117,7 +117,7 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: $spacing-lg;
     margin-bottom: $spacing-xl;
-    
+
     @include respond-to(md) {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -131,7 +131,7 @@
   border-radius: 0;
   overflow: visible;
   transition: all 0.3s ease;
-  
+
   .latest-product-image-container {
     position: relative;
     background: $light-gray;
@@ -141,13 +141,13 @@
     &:hover {
       background: $white;
     }
-    
+
     img {
       width: 100%;
       height: 250px;
       object-fit: contain;
     }
-    
+
     // Overlay action buttons (cart, wishlist, quick view)
     .product-overlay {
       position: absolute;
@@ -164,7 +164,7 @@
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        background: #E7F3FF;
+        background: #e7f3ff;
         border: none;
         cursor: pointer;
         display: flex;
@@ -188,7 +188,7 @@
       position: absolute;
       top: 15px;
       left: -2px;
-      background: url('/src/assets/images/backgronudImages/sale.png') no-repeat center;
+      background: url("/src/assets/images/backgronudImages/sale.png") no-repeat center;
       background-size: contain;
       color: white;
       font-weight: 700;
@@ -201,16 +201,16 @@
       transform: rotate(-10deg);
     }
   }
-  
+
   .latest-product-info {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: $spacing-sm;
-    
+
     .latest-product-name {
       text-decoration: underline;
-      text-decoration-color:#EEEFFB;
+      text-decoration-color: #eeeffb;
       text-decoration-thickness: 3px;
       text-underline-offset: 6px;
       font-size: 1rem;
@@ -220,28 +220,28 @@
       flex: 1;
       line-height: 1.4;
     }
-    
+
     .latest-price-info {
       display: flex;
       align-items: center;
       gap: 0.5rem;
       flex-shrink: 0;
-      
+
       .latest-current-price {
         font-size: 1rem;
         font-weight: 600;
         color: #151875;
       }
-      
+
       .latest-original-price {
         font-size: 0.875rem;
-        color: #FB2448;
+        color: #fb2448;
         text-decoration: line-through;
         font-weight: 400;
       }
     }
   }
-  
+
   // Hover effects for latest card
   &:hover {
     .latest-product-image-container {
@@ -280,13 +280,13 @@
     z-index: 10;
 
     &.new {
-      background: #52D5BA;
+      background: #52d5ba;
     }
   }
 
   .product-image-container {
     position: relative;
-    background: #F5F6F8;
+    background: #f5f6f8;
     padding: $spacing-lg;
 
     img {
@@ -310,7 +310,7 @@
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        background: #E7F3FF;
+        background: #e7f3ff;
         border: none;
         cursor: pointer;
         display: flex;
@@ -336,7 +336,7 @@
       bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
-      background: #08D15F;
+      background: #08d15f;
       color: white;
       padding: 0.75rem 2rem;
       border: none;
@@ -361,7 +361,7 @@
 
     .product-name {
       font-size: 1.125rem;
-      color: #FB2E86;
+      color: #fb2e86;
       font-weight: 600;
       margin: 0 0 $spacing-xs 0;
     }
@@ -397,7 +397,6 @@
     }
   }
 
-
   // Card-level hover effects
   &:hover {
     .product-overlay {
@@ -409,8 +408,8 @@
     }
 
     .product-info {
-      background: #2F1AC4;
-      
+      background: #2f1ac4;
+
       .product-name {
         color: white;
       }
@@ -425,4 +424,3 @@
     }
   }
 }
-

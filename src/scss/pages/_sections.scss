@@ -30,7 +30,7 @@
 // Features Section
 .features-section {
   padding: $spacing-xxl 0;
-  background: #F1F0FF;
+  background: #f1f0ff;
 
   .features-content {
     display: grid;
@@ -50,10 +50,9 @@
       width: 100%;
       height: 100%;
       z-index: 1; // keep it behind
-      
     }
 
-     img {
+    img {
       width: 100%;
       height: auto;
       position: relative;
@@ -80,10 +79,10 @@
         padding-left: $spacing-lg;
 
         &::before {
-          content: '•';
+          content: "•";
           position: absolute;
           left: 0;
-          color: #52D5BA; 
+          color: #52d5ba;
         }
       }
     }
@@ -111,7 +110,7 @@
       overflow: hidden;
 
       &:hover {
-        transform:  all 0.5s ease scale(1.05);
+        transform: all 0.5s ease scale(1.05);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
@@ -156,11 +155,11 @@
     }
 
     .promotional-banner-pink {
-      background: #FFF6FB;
+      background: #fff6fb;
     }
 
     .promotional-banner-lavender {
-      background: #EEEFFB;
+      background: #eeeffb;
     }
 
     .product-list {
@@ -170,7 +169,7 @@
       justify-content: space-between;
 
       .product-list-item {
-        background: #F6F7FB;
+        background: #f6f7fb;
         border-radius: 8px;
         padding: $spacing-md;
         display: flex;
@@ -219,7 +218,6 @@
 }
 
 @keyframes pulse {
-
   0%,
   100% {
     transform: translate(-50%, -50%) scale(1);
@@ -246,28 +244,28 @@
     align-items: center;
     gap: $spacing-md;
     margin-bottom: $spacing-xl;
-    
+
     .discount-nav-link {
       color: $secondary-color;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.3s ease;
       position: relative;
-      
+
       &.active {
         color: $primary-color;
-        
+
         &::after {
-          content: '•';
+          content: "•";
           position: absolute;
           right: -10px;
-          top: 2px;   
+          top: 2px;
           color: $primary-color;
           font-size: 0.875rem;
           font-weight: 1000;
         }
       }
-      
+
       &:hover {
         color: $primary-color;
       }
@@ -298,7 +296,7 @@
       font-weight: 600;
       margin-bottom: $spacing-md;
     }
-    
+
     .discount-description {
       color: $text-gray;
       margin-bottom: $spacing-lg;
@@ -320,7 +318,7 @@
         line-height: 1.6;
 
         &::before {
-          content: '✓';
+          content: "✓";
           position: absolute;
           left: 0;
           color: $secondary-color;
@@ -356,7 +354,7 @@
       position: absolute;
       width: 400px;
       height: 400px;
-      background-color: #FCECF1;                    
+      background-color: #fcecf1;
       border-radius: 50%;
       z-index: 1;
     }
@@ -407,7 +405,7 @@
       text-align: center;
 
       h2 {
-        color: #2A3B70;
+        color: #2a3b70;
         font-size: 2.5rem;
         font-weight: 600;
         line-height: 1.4;
@@ -423,7 +421,7 @@
 }
 
 .btn-newsletter {
-  background: #FF4081;
+  background: #ff4081;
   color: $white;
   padding: 1rem 3rem;
   border: none;
@@ -435,7 +433,7 @@
   font-family: $font-primary;
 
   &:hover {
-    background:#FF4081;
+    background: #ff4081;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 64, 129, 0.4);
   }
@@ -563,7 +561,7 @@
       transition: all 0.3s ease;
 
       &.active {
-        background: #FB2E86;
+        background: #fb2e86;
         width: 16px;
         height: 16px;
       }
@@ -574,14 +572,14 @@
 .category-card {
   position: relative;
   text-align: center;
-  
+
   .base-container {
     position: absolute;
     width: 100%;
     aspect-ratio: 1;
     border-radius: 50%;
     z-index: 1;
-    background: #9877E7;
+    background: #9877e7;
     @include flex-center;
     margin-bottom: $spacing-md;
   }
@@ -592,12 +590,12 @@
     border-radius: 50%;
     z-index: 2;
     overflow: hidden;
-    background: #F5F6F8;
+    background: #f5f6f8;
     margin-bottom: $spacing-md;
     position: relative;
     transition: transform 0.3s ease;
     cursor: pointer;
-    
+
     &:hover {
       transform: translate(6px, -6px);
     }
@@ -605,7 +603,7 @@
     &:hover .category-view-all {
       height: 30px;
       width: 100px;
-      background:#08D15F;
+      background: #08d15f;
       color: $white;
       border-radius: 3px;
       position: absolute;
