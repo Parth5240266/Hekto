@@ -227,10 +227,12 @@
   .comment-form .remember {
     color: $text-gray;
     font-size: 0.875rem;
+    display: flex;
+    gap: 1rem;
   }
 
   .comment-form .btn {
-    width: 220px;
+    width: 100%;
     justify-self: center;
   }
 }

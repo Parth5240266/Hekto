@@ -1,0 +1,213 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// Contact page styles
+.contact-page {
+  padding: 4.5rem 0;
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  .contact-section-title {
+    color: $secondary-color;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: $font-primary;
+    margin: 0 0 1.25rem 0;
+  }
+
+  .contact-text {
+    color: $text-gray;
+    line-height: 1.8;
+    margin: 0 0 1.5rem 0;
+    font-family: $font-secondary;
+  }
+
+  // Information About us Section
+  .contact-info-section {
+    .contact-icons {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+
+      .contact-icon {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+
+        &.contact-icon-purple {
+          background: #7e33e0;
+        }
+
+        &.contact-icon-pink {
+          background: $primary-color;
+        }
+
+        &.contact-icon-blue {
+          background: #2f1ac4;
+        }
+      }
+    }
+  }
+
+  // Contact Way Section
+  .contact-way-section {
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+
+      .contact-method {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+
+        .contact-method-icon {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          flex-shrink: 0;
+          display: inline-block;
+
+          &.contact-method-icon-purple {
+            background: #7e33e0;
+          }
+
+          &.contact-method-icon-orange {
+            background: #fb6e27;
+          }
+
+          &.contact-method-icon-pink {
+            background: $primary-color;
+          }
+
+          &.contact-method-icon-green {
+            background: #05e6b7;
+          }
+        }
+
+        .contact-method-content {
+          flex: 1;
+
+          p {
+            margin: 0 0 0.25rem 0;
+            color: $secondary-color;
+            font-family: $font-secondary;
+            font-size: 0.9375rem;
+            line-height: 1.6;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Get In Touch Form Section
+  .contact-form-section {
+    .contact-form {
+      margin-top: 1.5rem;
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        @media (max-width: 576px) {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .form-group {
+        margin-bottom: 1rem;
+
+        &:last-of-type {
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .form-input {
+        width: 100%;
+        padding: 0.875rem 1rem;
+        border: 1px solid $border-gray;
+        border-radius: 4px;
+        font-family: $font-secondary;
+        font-size: 0.9375rem;
+        color: $secondary-color;
+        background: $white;
+        transition: border-color 0.3s ease;
+
+        &::placeholder {
+          color: $text-gray;
+        }
+
+        &:focus {
+          outline: none;
+          border-color: $primary-color;
+        }
+
+        &.form-textarea {
+          min-height: 150px;
+          resize: vertical;
+          font-family: $font-secondary;
+        }
+      }
+
+      .btn-contact {
+        padding: 0.875rem 2rem;
+        font-family: $font-primary;
+        font-weight: 600;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+
+  // Contact Illustration
+  .contact-illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .contact-image {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 3rem 0;
+
+    .contact-grid {
+      gap: 2rem;
+    }
+
+    .contact-section-title {
+      font-size: 1.25rem;
+    }
+  }
+}
+

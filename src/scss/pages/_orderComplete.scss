@@ -1,0 +1,192 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.order-complete-page {
+  padding: 6rem 0 7rem 0;
+
+
+  .order-left-and-right-border{
+    width: 877px;
+    height: 260px;
+    position: absolute;
+    top: 89px;
+    right: 69px;
+    border: 3px dashed #d6d2d2;
+    border-right: none;
+    border-top: none;
+  }
+
+  .order-complete-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .oc-side-image {
+    height: auto;
+  }
+
+  .oc-side-image-left {
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    transform: translateY(-50%);
+  }
+
+  .oc-side-image-right {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+  }
+
+  .order-complete-card {
+    width: 100%;
+    max-width: 770px;
+    border-radius: 12px;
+    padding: 3rem 2rem 3.25rem 2rem;
+    text-align: center;
+  }
+
+  .order-complete-icon {
+    position: relative;
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 1.25rem auto;
+    background: #f1efef;
+    border-radius: 50%;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit:contain;
+    }
+  }
+
+  .order-complete-title {
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 2rem;
+    color: $secondary-color;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .order-complete-text {
+    font-family: $font-secondary;
+    color: $text-gray;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto 1.75rem auto;
+  }
+
+  .order-complete-btn {
+    padding: 0.875rem 2rem;
+  }
+}
+
+/* Tweak absolute dashed border for medium-large screens while keeping desktop look */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .order-left-and-right-border{
+    width: 720px;
+    height: 220px;
+    top: 75px;
+    right: 32px;
+  }
+
+  .oc-side-image-left {
+    left: 10%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .order-left-and-right-border{
+    width: 800px;
+    height: 240px;
+  }
+
+  .oc-side-image-left {
+    left: 12%;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .order-left-and-right-border{
+    display: none;
+  }
+
+  .order-complete-page {
+    padding: 4rem 0 5rem 0;
+
+    .oc-side-image-left,
+    .oc-side-image-right {
+      display: none;
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .order-complete-page {
+    padding: 3rem 0 4rem 0;
+
+    .order-left-and-right-border{
+     display: none;
+    }
+
+    .order-complete-card {
+      max-width: 100%;
+      padding: 2rem 1.25rem 2.5rem 1.25rem;
+    }
+
+    .order-complete-title {
+      font-size: 1.75rem;
+    }
+
+    .order-complete-text {
+      max-width: 90%;
+      margin: 0 auto 1.25rem auto;
+    }
+
+    .order-complete-btn {
+      padding: 0.75rem 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .order-complete-page {
+    padding: 2.5rem 0 3.5rem 0;
+
+    .order-left-and-right-border{
+      display: none;
+    }
+
+    .order-complete-card {
+      padding: 1.5rem 1rem 2rem 1rem;
+      border-radius: 10px;
+    }
+
+    .order-complete-icon {
+      width: 64px;
+      height: 64px;
+    }
+
+    .order-complete-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .order-complete-text {
+      line-height: 1.7;
+    }
+
+    .order-complete-btn {
+      padding: 0.65rem 1.25rem;
+    }
+  }
+}
+
